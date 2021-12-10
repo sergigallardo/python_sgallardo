@@ -1,12 +1,6 @@
 def main():
     x = 0
-    llista = []
-    nums = [x for x in range(1000)]
-    for m in range(len(nums)):
-        x = str(m)
-        if x in '6666':
-            llista.append(x)
-
-    print(llista)
+    nums = [x for x in range(1000) if '6' in str(x)]
+    print(nums)
 if __name__ == '__main__':
     main()
