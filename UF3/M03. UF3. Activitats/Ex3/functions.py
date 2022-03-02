@@ -30,7 +30,7 @@ def menu():
         print("|\t\tQuina acció vols realitzar:\t\t\t\t\t\t\t\t\t|")
         print("|\t\t1.-Crear arxiu \t\t\t\t\t\t\t\t\t\t\t\t|")
         print("|\t\t2.-Mostrar  \t\t\t\t\t\t\t\t\t\t\t\t|")
-        print("|\t\t3.-Llegeix \t\t\t\t\t\t\t\t\t\t\t\t\t|")
+        print("|\t\t3.-Escriu \t\t\t\t\t\t\t\t\t\t\t\t\t|")
         print("|\t\t4.-Sortir\t\t\t\t\t\t\t\t\t\t\t\t\t|")
         print("|\t\t_____________________________________________________\t\t|")
         num = int(input("Introdueix l'opció:"))
