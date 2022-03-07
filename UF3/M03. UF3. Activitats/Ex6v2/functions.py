@@ -1,5 +1,6 @@
 import csv
 import pandas
+from datetime import datetime
 def inputs():
     y=int(0)
     num = int(input("Quants registres vols introduir:"))
@@ -9,7 +10,14 @@ def inputs():
         book['title'] = input("Introdueix el títol del llibre: ")
         book['author'] = input("Introdueix l'autor del llibre: ")
         book['editorial'] = input("Introdueix l'editorial del llibre: ")
-        book['pub_date'] = input("Introdueix la data de publicació del llibre: ")
+        while True:
+            try:
+                date_str = input('\n Introdueix la data de publicació ==> exemple "18/01/1952"...: ')
+                date = datetime.strptime(date_str, '%d/%m/%Y')
+                break
+            except:
+                print("\n La data introduida no es correcta...")
+        book['pub_date'] = date
         with open('files/books.csv', 'a', encoding='utf-8', newline='') as csvfile:
             fieldnames = ['isbn', 'title', 'author', 'editorial', 'pub_date']
             writeCSV = csv.DictWriter(csvfile, fieldnames=fieldnames)
