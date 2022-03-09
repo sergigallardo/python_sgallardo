@@ -31,7 +31,7 @@ def inputs():
                 print("El registre s'ha inserit correctament.")
         y = y + 1
 def read():
-    df = pd.read_csv('bio.csv')
+    df = pd.read_csv('bio.csv',on_bad_lines='skip')
     print(df)
 
 def menu():
