@@ -34,6 +34,11 @@ def inputs():
 def read():
     df = pd.read_csv("register.csv")
     print(df)
+    #"Mostrar contenido den un CSV sin usar Pandas(Los datos se muestran en formato lista "['dato1','dato2','dato3']").
+    #with open('register.csv', newline='') as File:
+     #   reader = csv.reader(File)
+      #  for row in reader:
+       #     print(row)
 def menu():
     x = 0
     y = 0
